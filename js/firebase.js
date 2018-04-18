@@ -1,6 +1,6 @@
 ﻿var appFB = {};
 (function () {
-    // Initialize Firebase
+    // Make sure you replace this code with youre api key, that you get from firebase
     var config = {
         apiKey: "AIzaSyDwPz6ln2Vnc1zQ68PyMPtSVET9yGNhs-U",
         authDomain: "usergroups-8da40.firebaseapp.com",
