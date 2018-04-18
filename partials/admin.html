@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ADMIN</title>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="../js/firebase.js"></script>
+    <script src="../js/apiService.js"></script>
+    <script src="../js/admin.js"></script>
+    <link rel="stylesheet" href="../style/adminPage.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="admin-panel-body">
+            <div class="title-addmessage-style">
+                <h1 class="" style="border-bottom: 3px solid #304578;">Admin Panel</h1>
+            </div>
+
+            <div class="userid-container">
+                <div>
+                    <h3 class="text-color-blue" style="border-bottom: 2px solid #304578;width: 50%;margin: 15px auto;">Add User Uid</h3>
+                    <input class="input-style" style="height: 25px;" type="text" id="input-userUid" name="userName" value="" />
+                </div>
+                <div>
+                    <button onclick="adminApp.addUid()" class="add-user-button">Add</button>
+                </div>
+            </div>
+            
+
+            <div class="permited-user-list">
+                <h3 class="permited-user-title">Permitted Users:</h3>
+                <div class="userUids-container" id="userUids-container">
+                    <!-- inject groups here -->
+                    <!-- <span class="permited-user-span">123123123123</span>
+                    <span class="permited-user-span">123123asdasd123</span>
+                    <span class="permited-user-span">12sgftty123123</span> -->
+                </div>
+            </div>
+
+
+            <div class="goback-button-container">
+                <button class="goback-button" onclick="location.replace('../index.html')">Go Back</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

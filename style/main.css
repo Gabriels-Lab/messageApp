@@ -1,0 +1,137 @@
+﻿body {
+    background-color: #bd7f34;
+}
+
+.main-container {
+    height:885px;
+    display:flex;
+    flex-direction:row;
+}
+
+.left-panel {
+    height: 100%;
+    width: 50%;
+    background-color: #e9e9e9;
+    text-align: center;
+    overflow: auto;
+}
+
+.right-panel {
+    height: 100%;
+    width: 50%;
+    background-color: #d0d0d0;
+    overflow: auto;
+}
+
+.add-message-form {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15%;
+    padding-bottom: 5%;
+    border: 3px solid #304578;
+    border-radius: 5px;
+    background-color: #fda741;
+}
+
+.input-style {
+    border: none;
+    background: #304578;
+    outline: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 2px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.text-color-blue {
+    color: #ffffff;
+}
+
+.title-addmessage-style {
+    width: 50%;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.message-button {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #304578;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 70px;
+    height: 35px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+    .message-button:hover {
+        background-color: #3d5693;
+    }
+    .message-button:active {
+        background-color: #223666;
+    }
+
+
+.message-container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding-bottom: 1%;
+    border: 3px solid #fda741;
+    border-radius: 5px;
+    background-color: #304578;
+    color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+.header-message {
+    background-color: #fda741;
+    display: flex;
+    flex-direction: row;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.message-header-username {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.message-header-x {
+    flex-grow: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.message-header-x:hover{
+    color:#da3838;
+}
+
+
+
+.footer-area{
+    height:50px;
+    background-color: #304578;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-text-style{
+    text-align: center;
+    margin-top: 15px;
+    color: #ffb65f;
+    font-size: large;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+    flex-grow: 1;
+    max-width: 70px;
+    background-color: transparent;
+    border: navajowhite;
+    outline: none;
+}

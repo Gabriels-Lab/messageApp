@@ -1,0 +1,98 @@
+﻿body{
+    background-color: #efefef;
+}
+
+.userid-container{
+    height: 145px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #9cb1dc;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.add-user-button {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #304578;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.add-user-button:hover {
+    background-color: #3d5693;
+}
+.add-user-button:active {
+    background-color: #223666;
+}
+
+.input-style {
+    border: none;
+    background: #304578;
+    outline: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 2px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.text-color-blue {
+    color: #ffffff;
+}
+
+
+.permited-user-list{
+    background-color: #304578;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.userUids-container{
+    display: flex;
+    flex-direction: column;
+}
+.permited-user-title{
+    color: #ffffff;
+    font-size: xx-large;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+.permited-user-span{
+    background: #9cb1dc;
+    color: #304578;
+    margin: 10px;
+    font-size: x-large;
+}
+
+.goback-button-container{
+    margin: 15px auto;
+    text-align: center;
+}
+
+.goback-button{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #304578;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.goback-button:hover {
+    background-color: #3d5693;
+}
+.goback-button:active {
+    background-color: #223666;
+}

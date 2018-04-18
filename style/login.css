@@ -1,0 +1,27 @@
+body{
+    background-color: #dedede;
+}
+
+.decorated-text{
+    text-align: center;
+    color: #415688;
+}
+
+.firebaseui-container{
+    background-color: #f7f7f7;
+}
+
+.firebaseui-title{
+    color:rgb(65, 86, 136);
+}
+.firebaseui-label{
+    color:rgb(65, 86, 136);
+}
+
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.is-focused .mdl-textfield__label{
+    color:rgb(65, 86, 136);
+}
+
+input{
+color:#364d69 !important;
+}

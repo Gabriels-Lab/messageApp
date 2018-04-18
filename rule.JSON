@@ -1,0 +1,28 @@
+{
+  "rules": {
+    "userGroups":{
+      ".read": "auth.uid === 'jzNg0Sfl4tdaPhIWcXdRtk4CVoS2'",
+      "permitted": {
+        ".write": "auth.uid === 'jzNg0Sfl4tdaPhIWcXdRtk4CVoS2'",
+        "$uid": {".validate": true}
+      }, 
+      "admins": {
+        "$uid": {".validate": true}
+      },
+    },
+    "messages": {
+      ".read": "auth !== null",
+      "$messageId":{
+        ".write": "auth.uid !== null && //not anonymous
+        	((auth.uid === data.child('uid').val() || auth.uid === newData.child('uid').val()) || //himself
+          auth.uid === 'jzNg0Sfl4tdaPhIWcXdRtk4CVoS2' || //administrator
+          root.child('userGroups').child('permitted').child(auth.uid).exists())", //permitted user
+        ".validate": "newData.hasChildren(['message', 'userName', 'uid'])",
+         "message": {".validate": "newData.isString() && newData.val().length > 0"},
+         "userName": {".validate": "newData.isString() && newData.val().length > 0"},
+         "uid": {".validate": "newData.isString() && newData.val().length > 0"},
+         "&other": {".validate": false}
+      }
+    } 
+  }
+}
